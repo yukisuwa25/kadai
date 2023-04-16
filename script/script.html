@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html_name_00/css/reset.css">
+    <link rel="stylesheet" href="./scrript.css">
+    <title>おみくじ</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header-pad">
+        <div class="card">
+            <div class="card-image">
+                <h1 class="head-title">ボタンを押してスタート</h1>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- main -->
+    <main>
+        <a href="#" id="omikuzi" class="btn">引く</a>
+        <div>
+            <p id="echo"></p>
+        </div>
+    </main>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="footer-pad">
+        <div class="footer">
+            <p class="footer-pra footer-ani">遊んでくれてありがとう</p>
+        </div>
+    </footer>
+    <!-- footer -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
+    <script>
+        $("#omikuzi").on("click",function(){
+            //乱数を作る
+            const r = Math.ceil( Math.random()*5 );
+            //if分岐
+            let view = "";
+            if(r==1){
+                view = '<img src="monta.png" width="300px">';
+            }
+            if(r==2){
+                view = '<img src="super.png" width="300px">';
+            }            
+            if(r==3){
+                view = '<img src="hyper.png" width="300px">';
+            }
+            //表示
+            $("#echo").html(view);
+
+        });
+    </script>
+</body>
+</html>
