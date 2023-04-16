@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html_name_00/css/reset.css">
+    <link rel="stylesheet" href="./scrript.css">
+    <title>おみくじ</title>
+</head>
+<body>
+    <header class="header-pad">
+        <div class="card">
+            <div class="card-image">
+                <h1 class="head-title">おみくじを引いてみよう</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <a href="#" id="omikuzi" class="btn">おみくじを引く</a>
+        <p id="echo"></p>
+    </main>
+    <footer class="footer-pad">
+        <div class="footer">
+            <p class="footer-pra">遊んでくれてありがとう</p>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
+    <script>
+        $("#omikuzi").on("click",function(){
+            //乱数を作る
+            const r = Math.ceil( Math.random()*5 );
+            //if分岐
+            let view = "";
+            if(r==1){
+                view = "大吉";
+            }
+            if(r==2){
+                view = "中吉";
+            }            
+            if(r==3){
+                view = "小吉";
+            }
+            if(r==4){
+                view = "吉";
+            }
+            if(r==5){
+                view = "凶";
+            }
+            //表示
+            $("#echo").html(view);
+
+        });
+    </script>
+</body>
+</html>

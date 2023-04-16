@@ -48,10 +48,10 @@
           <h2 class="text-yellow about__width">About</h2>
           <h3 class="text-size about__info">チーズアカデミーについて</h3>
           <p class="about__about text__text">チーズアカデミーは、チーズ職人養成学校です。</p>
-          <p class="about__about text__text">チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+          <p class="about__about text__text">チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。<br>
             そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。</p>
           <p class="about__about text__text">そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。</p>
-          <p class="about__sup text__text">卒業後、チーズ自給自足のバックアップはもちろんのこと、
+          <p class="about__sup text__text">卒業後、チーズ自給自足のバックアップはもちろんのこと、<br>
             チーズ職人への就職・転職もサポートします。</p>
           <ul class="about-list">
             <li class="about-item"><img src="./img/about_01.jpg" alt="アバウト写真１"></li>
@@ -70,7 +70,7 @@
     <section id="course">
       <div class="course-wrap">
         <h2 class="course__title text-center text-black">Course</h2>
-        <p class="course__text text__text">未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+        <p class="course__text text__text">未経験からでもスタートができるよう、カリキュラムは多くの専門家や<br>
           現役チーズ職人のアドバイスのもと、作られました。</p>
 
               <div class="course-list">
@@ -135,7 +135,7 @@
               <img src="./img/news_img.jpg" alt="ニュース写真">
             </div>
             <p class="news__head">2016/11/18</p>
-            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる
+            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる<br>
               チーズだけをふんだんに使用した話題のピザ屋
               「Kosuge Pizza」が渋谷でオープンしました！</p>
           </li>
@@ -144,7 +144,7 @@
               <img src="./img/news_img.jpg" alt="ニュース写真">
             </div>
             <p class="news__head">2016/11/18</p>
-            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる
+            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる<br>
               チーズだけをふんだんに使用した話題のピザ屋
               「Kosuge Pizza」が渋谷でオープンしました！</p>
           </li>
@@ -153,12 +153,12 @@
               <img src="./img/news_img.jpg" alt="ニュース写真">
             </div>
             <p class="news__head">2016/11/18</p>
-            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる
+            <p class="text__text">チーズアカデミー卒業生のコスゲさんによる<br>
               チーズだけをふんだんに使用した話題のピザ屋
               「Kosuge Pizza」が渋谷でオープンしました！</p>
           </li>
         </ul>
-          <a href="#" class="btn">More</a>
+          <a href="/script.html" class="btn">遊んでみよう</a>
       </div>
     </section>
 
@@ -181,9 +181,9 @@
       <div class="contact-wrap">
         <h2 class="text-black contact__title">Contact</h2>
         <p class="text-size contact__info">説明会お申し込み・お問い合わせ</p>
-        <p class="contact__text text__text">ぜひ1度、足を運んでみませんか。説明会は随時開催中。
+        <p class="contact__text text__text">ぜひ1度、足を運んでみませんか。説明会は随時開催中。<br>
           その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
-        <p class="text__text contact__pra">※チーズアカデミーは実際には存在しません。
+        <p class="text__text contact__pra">※チーズアカデミーは実際には存在しません。<br>
           間違っても問い合わせしないようお願いいたします。</p>
         <form action="#" method="post">
           <dl class="contact-inner">
@@ -194,7 +194,17 @@
             <dt class="contact-title">メールアドレス</dt>
             <dd class="contact-item"><input type="email" name="email" id="email" class="form-parts"></dd>
             <dt class="contact-title">チーズアカデミーを知ったきっかけ</dt>
-            <dd class="contact-item"><input type="text" name="chance" id="chance" class="form-parts"></dd>
+            <dd class="contact-item">
+              <p>
+                <select name="chance" id="chance" class="form-parts">
+                  <option value="google検索">google検索</option>
+                  <option value="SNS">SNS</option>
+                  <option value="紹介">紹介</option>
+                  <option value="たまたま通りかかった">たまたま通りかかった</option>
+                  <option value="その他">その他</option>
+                </select>
+              </p>
+            </dd>
             <dt class="contact-title">志望動機選択肢</dt>
             <dd class="contact-item">
               <label for="startup" class="form-label"><input type="checkbox" name="kind" id="startup" value="起業をしたい">起業をしたい</label>
