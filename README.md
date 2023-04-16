@@ -20,6 +20,6 @@
 - [感想]
 - [tips]
 - [参考記事]
-https://www.sejuku.net/blog/75112
-https://www.tagindex.com/html_tag/form/select.html
-https://coco-factory.jp/ugokuweb/css02/
+- https://www.sejuku.net/blog/75112
+- https://www.tagindex.com/html_tag/form/select.html
+- https://coco-factory.jp/ugokuweb/css02/
